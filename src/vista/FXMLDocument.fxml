@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creacionarchivoxml.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="497.0" prefWidth="458.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="creacionarchivoxml.FXMLDocumentController">
+   <children>
+      <TextField fx:id="nombreEstdudiante" layoutX="169.0" layoutY="101.0" />
+      <TextField fx:id="telefono" layoutX="169.0" layoutY="163.0" />
+      <TextField fx:id="correo" layoutX="169.0" layoutY="220.0" />
+      <TextField fx:id="codigo" layoutX="169.0" layoutY="297.0" />
+      <TextField fx:id="carrera" layoutX="169.0" layoutY="356.0" />
+      <Label layoutX="36.0" layoutY="105.0" text="Nombre" />
+      <Label layoutX="34.0" layoutY="175.0" text="Teléfono" />
+      <Label layoutX="39.0" layoutY="232.0" text="Correo" />
+      <Label layoutX="34.0" layoutY="301.0" text="Código" />
+      <Label layoutX="38.0" layoutY="360.0" text="Carrera" />
+      <Button layoutX="74.0" layoutY="430.0" mnemonicParsing="false" onAction="#agregarEstdudiante" text="Agregar estudiante" />
+      <Button layoutX="268.0" layoutY="430.0" mnemonicParsing="false" onAction="#guardarArchivo" text="Guardar archivo" />
+      <Label layoutX="153.0" layoutY="34.0" prefHeight="32.0" prefWidth="181.0" text="Agregar estudiantes" textFill="#dd1c1c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
